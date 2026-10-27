@@ -1,0 +1,27 @@
+name: Laporan Tutor AI Bocor
+description: Laporkan jika Tutor AI langsung memberikan kode jawaban tanpa melatih atau memuji kode yang salah
+title: "[TUTOR BOCOR]: (Sebut nama platform/model AI)"
+labels: ["tutor-leak", "prompt-tuning"]
+body:
+  - type: input
+    id: platform
+    attributes:
+      label: Model / Platform AI yang Digunakan
+      description: Platform dan model apa yang kamu gunakan? (Contoh: ChatGPT GPT-4o, Claude 3.5 Sonnet, Gemini Flash)
+      placeholder: "Contoh: ChatGPT gratisan (GPT-4o mini)"
+    validations:
+      required: true
+  - type: textarea
+    id: chat_murid
+    attributes:
+      label: Apa yang Kamu Ketik ke AI?
+      description: Kalimat apa yang memicu tutor membocorkan jawaban?
+    validations:
+      required: true
+  - type: textarea
+    id: respon_ai
+    attributes:
+      label: Apa Respon Tutor AI yang Bocor?
+      description: Tempel potongan jawaban AI yang melanggar aturan tutor.
+    validations:
+      required: true

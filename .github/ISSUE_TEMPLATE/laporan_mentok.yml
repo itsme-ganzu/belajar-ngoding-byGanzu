@@ -1,0 +1,27 @@
+name: Laporan Mentok / Error
+description: Laporkan titik di mana kamu mengalami kebingungan atau error yang tidak bisa diatasi
+title: "[MENTOK]: (Sebut nama modul, misal 1.1 Variabel)"
+labels: ["mentok", "needs-review"]
+body:
+  - type: input
+    id: modul
+    attributes:
+      label: Modul Belajar
+      description: Di modul berapa kamu mengalami kendala? (Contoh: Level 1 Modul 1.0 Setup)
+      placeholder: "Contoh: Level 1 - 1.2 Kondisi"
+    validations:
+      required: true
+  - type: textarea
+    id: dicoba
+    attributes:
+      label: Apa yang Sudah Kamu Coba?
+      description: Jelaskan langkah atau kode yang sudah kamu ketik.
+    validations:
+      required: true
+  - type: textarea
+    id: kendala
+    attributes:
+      label: Apa Pesan Error atau Kebingungan yang Muncul?
+      description: Tempel pesan error dari terminal jika ada.
+    validations:
+      required: true
